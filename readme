@@ -1,0 +1,14 @@
+Timetable Parser (image) ──────┐
+                               │
+                               ▼
+                        Google Calendar  ←────── Sync availability
+                               │
+                               ▼
+      +-----------------+  structured slots   +-------------------+
+      | Curriculum JSON | ─────────────────▶ | Planning Agent     |
+      +-----------------+                    +-------------------+
+                                                    │
+                                                    ▼
+                                        +-------------------------+
+                                        | Google Calendar API     | ←── export events
+                                        +-------------------------+

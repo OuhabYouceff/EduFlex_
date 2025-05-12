@@ -1,0 +1,16 @@
+{
+    "lundi": [
+      {"debut": "09:00", "fin": "11:00", "matiere": "Cloud"},
+      {"debut": "23:00", "fin": "1:00", "matiere": "NLP"}
+    ],
+    "mardi": [
+      {"debut": "10:00", "fin": "12:00", "matiere": "DevOps"}
+    ],
+    "mercredi": [
+      {"debut": "21:30", "fin": "23:59", "matiere": "NLP"}
+    ],
+    "jeudi":[
+        {"debut": "00:01", "fin": "10:00","matiere":"NLP"}
+    ]
+  }
+  

@@ -1,0 +1,9 @@
+Flask
+python-dotenv
+pdf2image
+Pillow
+fitz
+frontend
+tools
+python-pptx
+python-dateutil
