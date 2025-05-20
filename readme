@@ -1,6 +1,5 @@
+```
 # EduFlex
-
-![Timetable Parser Diagram](path/to/timetable-parser-image.png)
 
 **EduFlex** is a Python-based scheduling assistant designed to streamline academic planning by integrating curriculum data with Google Calendar. It automates the process of generating and managing study sessions, ensuring an organized and efficient learning experience.
 
@@ -19,6 +18,7 @@
 
 ### Clone the Repository
 
-```bash
+```
 git clone https://github.com/OuhabYouceff/EduFlex_.git
 cd EduFlex_
+```
