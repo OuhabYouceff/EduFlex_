@@ -1,20 +1,3 @@
-```
-Timetable Parser (image) ──────┐
-                               │
-                               ▼
-                        Google Calendar  ←───── Sync availability
-                               │
-                               ▼
-      +-----------------+  structured slots   +-------------------+
-      | Curriculum JSON | ────────────────────▶ | Planning Agent     |
-      +-----------------+                    +-------------------+
-                                                    │
-                                                    ▼
-                                        +-------------------------+
-                                        | Google Calendar API     | ←── export events
-                                        +-------------------------+
-```
-
 # EduFlex\_
 
 **EduFlex\_** is a Python-based scheduling assistant designed to streamline academic planning by integrating curriculum data with Google Calendar. It automates the process of generating and managing study sessions, ensuring an organized and efficient learning experience.
