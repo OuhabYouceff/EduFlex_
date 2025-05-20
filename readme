@@ -1,24 +1,70 @@
-```
-# EduFlex
+# 📚 Chat-IHEC – Chat with Your Documents
 
-**EduFlex** is a Python-based scheduling assistant designed to streamline academic planning by integrating curriculum data with Google Calendar. It automates the process of generating and managing study sessions, ensuring an organized and efficient learning experience.
+An intelligent chatbot app powered by **LangChain**, **Ollama**, and **FAISS** that lets you:
 
----
-
-## Features
-
-- **Curriculum Integration**: Parses structured curriculum data from `curriculum.json` to identify courses, topics, and schedules.
-- **Timetable Parsing**: Processes timetable information from `calendrier.json` to determine available time slots.
-- **Google Calendar Synchronization**: Utilizes the Google Calendar API to create and manage events based on the planned study sessions.
-- **Session Management**: Stores and handles session data through `sessions.json` for tracking and updates.
+- Upload `.pdf` or `.txt` files
+- Ask questions about their content
+- Get answers in **French or English automatically**
+- See which parts of the documents were used to generate each answer
+- Stream answers in real-time like ChatGPT
 
 ---
 
-## Installation
+## ⚙️ Features
 
-### Clone the Repository
+✅ Upload documents dynamically  
+✅ Automatic indexing with FAISS  
+✅ Streaming answers (token by token)  
+✅ Memory of the conversation (context-aware)  
+✅ Shows the sources used to answer  
+✅ Auto-detects language (French 🇫🇷 / English 🇬🇧)  
+✅ Supports `.pdf` and `.txt`  
+✅ Download previously indexed files  
+
+---
+
+## 🚀 Installation
+
+1. **Clone this repository** or copy the files:
 
 ```
-git clone https://github.com/OuhabYouceff/EduFlex_.git
-cd EduFlex_
+git clone https://github.com/OuhabYouceff/IHEC
+cd chat-ihec
 ```
+Install dependencies (inside a virtualenv is recommended):
+```
+pip install -r requirements.txt
+```
+Make sure Ollama is installed and running:
+Install Ollama: https://ollama.com/download
+
+```
+ollama run qwen2.5:latest
+```
+
+▶️ Running the App
+
+```
+streamlit run app.py
+```
+
+🧠 How it Works
+You upload .pdf or .txt files via the sidebar.
+
+The app chunks and embeds the content using OllamaEmbeddings.
+
+It stores embeddings in a FAISS vector store.
+
+When you ask a question, it retrieves the top 3 relevant chunks.
+
+It sends these chunks + your question to llama3 via LangChain/Ollama.
+
+It streams the response back to you in the chat — with avatars and memory.
+
+
+📌 Example Prompt
+💬 "Quels sont les clubs disponibles à l'IHEC Carthage ?"
+
+✅ The app will answer in French and display the context it used to answer.
+
+
